@@ -10,3 +10,9 @@
   url("../fonts/DINPro-Regular.svg#DINPro-Regular") format("svg");
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'main';
+  src: url("../fonts/ProximaNova-Regular.eot?") format("eot"),
+  url("../fonts/ProximaNova-Regular.woff") format("woff");
+}
