@@ -47,3 +47,11 @@
   ::-moz-placeholder          {@content}
   :-ms-input-placeholder      {@content}
 }
+
+@mixin main-font {
+  font-family: 'main';
+  src: url("../fonts/ProximaNova-Regular.eot?") format("eot"),
+  url("../fonts/ProximaNova-Regular.woff") format("woff");
+  text-transform: uppercase;
+  font-weight: bold;
+}
