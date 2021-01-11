@@ -1,45 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #0e0e0c;
 }
 
-.page-header {
-    width: 100%;
-    padding: 34px 27px;
-}
+    .page-header {
+        width: 100%;
+        padding: 34px 27px;
+        display: flex;
+        flex-direction: row;
 
-.menu-button {
-    width: 88px;
-    display: flex;
-    align-items: center;
+        .left-nav {
+            width: 35%;
+            display: flex;
+            align-items: center;
+        }
 
-    .button-box {
-        width: 33px;
-        height: 22px;
-        position: relative;
-        margin-right: 12px;
+        .right-nav {
+            width: 65%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .menu-button {
+            width: 88px;
+            display: flex;
+            align-items: center;
+        
+            .button-box {
+                width: 33px;
+                height: 22px;
+                position: relative;
+                margin-right: 12px;
+            }
+        
+            .button-inner {
+                width: 100%;
+                height: 1px;
+                background-color: $main-color;
+                display: block;
+                position: absolute;
+            }
+        
+            .line-1 {
+                top: 0px;
+            }
+        
+            .line-2 {
+                top: 10px;
+            }
+        
+            .line-3 {
+                bottom: 0px;
+            }
+            .menu-text {
+                @include main-font;
+                color: $nav-color;
+            }
+        }
+
+        .logo-and-tabs {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .main-title {
+            @include main-font;
+            font-size: 36px;
+            letter-spacing: 11px;
+            color: #ffffff;
+            padding-right: 100px;
+            position: relative;
+
+            span {
+                display: block;
+                position: absolute;
+                width: 64px;
+                height: 4px;
+                background-color: #bea67c;
+                top: 19px;
+                left: 43px;
+            }
+        }
+
+        .tab-list {
+            @include main-font;
+            font-size: 15px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            li {
+                margin-left: 10px;
+
+                a {
+                    color: $nav-color;
+                    padding: 10px 100px 10px 0px;
+                }
+            }
+        }
+
+        .info-lang {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            .info-icon {
+                width: 23px;
+                height: 23px;
+                margin-right: 52px;
+                background-size: 23px;
+                display: block;
+                background-image: url("../images/content/info44.png");
+            }
+
+            span {
+                @include main-font;
+                font-size: 15px;
+                color: $nav-color;
+                margin-right: 5px;
+            }
+
+            .lang-arrow {
+                width: 6px;
+                height: 4px;
+                display: block;
+                background-image: url("../images/content/arrow-down.png");
+            }
+        }
     }
-
-        .button-inner {
-            width: 100%;
-            height: 1px;
-            background-color: #bea67c;
-            display: block;
-            position: absolute;
-        }
-
-        .line-1 {
-            top: 0px;
-        }
-
-        .line-2 {
-            top: 10px;
-        }
-
-        .line-3 {
-            bottom: 0px;
-        }
-    .menu-text {
-        @include main-font;
-        color: $nav-color;
-    }
-}

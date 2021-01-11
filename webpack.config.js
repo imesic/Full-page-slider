@@ -96,7 +96,7 @@ module.exports = {
     }),
     new CleanWebpackPlugin({
       verbose: true,
-      cleanOnceBeforeBuildPatterns: ['**/*', '!stats.json'],
+      cleanOnceBeforeBuildPatterns: [path.join(__dirname, 'dist/**/*')],
     }),
     new CopyWebpackPlugin({
       patterns: [

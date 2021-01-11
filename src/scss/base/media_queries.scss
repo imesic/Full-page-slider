@@ -1,0 +1,19 @@
+@media only screen and (max-width: 1500px) {
+    .page-header {
+        .left-nav {
+            width: 30%;
+        }
+        
+        .right-nav {
+            width: 70%;
+        }
+
+        .main-title {
+            padding-right: 50px;
+        }
+
+        .tab-list li a {
+            padding: 10px 50px 10px 0px;
+        }
+    }
+}
